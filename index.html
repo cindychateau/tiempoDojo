@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo Dojo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>DojoWeather</h1>
+            <ul class="links">
+                <li onclick="alerta(this)">
+                    <a href="#">Burbank</a>
+                </li>
+                <li onclick="alerta(this)">
+                    <a href="#">Chicago</a>
+                </li>
+                <li onclick="alerta(this)">
+                    <a href="#">Dallas</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="sanjose">
+            <h2>San José</h2>
+            <form>
+                <label>show temperature in</label>
+                <select name="escalaTemperatura" onchange="cambiaTemperatura(this)">
+                    <option>C</option>
+                    <option>F</option>
+                </select>
+            </form>
+        </div>
+        <div class="row">
+            <div class="dia">
+                <h2>Hoy</h2>
+                <img src="img/some_clouds.png" alt="">
+                <p>parcialmente nubl</p>
+                <p class="temperaturas">
+                    <span class="tempMax" id="temperatura1">24</span>
+                    <span class="tempMin" id="temperatura2">18</span>
+                </p>
+            </div>
+            <div class="dia">
+                <h2>Hoy</h2>
+                <img src="img/some_clouds.png" alt="">
+                <p>parcialmente nubl</p>
+                <p class="temperaturas">
+                    <span class="tempMax" id="temperatura3">32</span>
+                    <span class="tempMin" id="temperatura4">10</span>
+                </p>
+            </div>
+            <div class="dia">
+                <h2>Hoy</h2>
+                <img src="img/some_clouds.png" alt="">
+                <p>parcialmente nubl</p>
+                <p class="temperaturas">
+                    <span class="tempMax" id="temperatura5">12</span>
+                    <span class="tempMin" id="temperatura6">5</span>
+                </p>
+            </div>
+            <div class="dia lastElement">
+                <h2>Hoy</h2>
+                <img src="img/some_clouds.png" alt="">
+                <p>parcialmente nubl</p>
+                <p class="temperaturas">
+                    <span class="tempMax" id="temperatura7">25</span>
+                    <span class="tempMin" id="temperatura8">11</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="cookie">
+            <img src="img/cookie.png" alt="cookie">
+            <div class="text">
+                <h3>Stop! Cookie time.</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur </p>
+            </div>
+            <button onclick="aceptar()">Aceptar</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

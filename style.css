@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #89cff0;
+    color: black;
+}
+
+nav, .container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.links {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.links li a {
+    color: black;
+    text-decoration: none;
+}
+
+.sanjose {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid  black;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.row {
+    display: flex;
+}
+
+.dia {
+    flex: 1;
+    margin-right: 10px;
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.dia img {
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.lastElement {
+    margin-right: 0px;
+}
+
+.temperaturas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;;
+}
+
+.tempMax {
+    color: red;
+}
+
+.tempMin {
+    color: blue;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.cookie {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: rgb(242, 242, 242);
+}
+
+.cookie button {
+    padding: 5px 10px;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.cookie button:active {
+    background-color: aquamarine;
+}
+
+.h2 {
+    color: green;
+}
